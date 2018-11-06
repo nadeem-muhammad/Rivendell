@@ -1,0 +1,26 @@
+
+@mixin transition($property){
+    -webkit-transition: $property;
+        transition: $property;
+}
+
+@mixin flex($property){
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center
+}
+
+@mixin transform($property) {
+  -webkit-transform: $property;
+      -ms-transform: $property;
+          transform: $property;
+}
+
+
+
+@mixin opacity($opacity){
+    opacity: $opacity;
+    -ms-filter: $opacity;
+}
+

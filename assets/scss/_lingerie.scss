@@ -1,0 +1,91 @@
+.lingerie_area{
+    padding: 0 30px 30px;
+    @media #{$large-mobile}{
+        padding: 0 0 30px;
+    }
+    & .lingerie_inner{
+        border: 5px solid $color_4;
+        & .col-lg-8{
+            @media #{$large-mobile}{
+                flex: 50%;
+                max-width: 50%;
+            }
+        }
+        & .col-lg-4{
+            @media #{$large-mobile}{
+                flex: 50%;
+                max-width: 50%;
+            }
+        }
+        
+        & .lingerie_content{
+            padding: 15px 20px;
+            @media #{$large-mobile}{
+                padding: 15px 10px;
+            }
+            & .lingerie_content_top{
+                & h2{
+                    color: $color_1;
+                    font-size: 28px;
+                    font-weight: 700;
+                    text-transform: capitalize;
+                    line-height: 25px;
+                    margin-bottom: 10px;
+                }
+                & h4{
+                     font-size: 15px;
+                    text-transform: capitalize;
+                    color: $color_1;
+                    line-height: 20px;
+                    margin-bottom: 10px;
+                }
+                & p{
+                    margin-top: 0;
+                    margin-bottom: 20px;
+                    @media #{$large-mobile}{
+                        display: none;
+                    }
+                }
+            }
+            & .lingerie_content_bottom{
+                display: flex;
+                @media #{$large-mobile}{
+                        display: none;
+                    }
+                & .lingerie_menu_item{
+                    margin-right: 70px;
+                    &:last-child{
+                        margin-right: 0; 
+                    }
+                    & ul{
+                        & li{
+                            & a{
+                               text-transform: capitalize;
+                                color: $color_4;
+                                font-size: 13px;
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .lingerie_thumb{
+            display: flex;
+            & .lingerie_single_thumb{
+                margin-left: 10px;
+                &:first-child{
+                    margin-left: 0; 
+                }
+            }
+            & .lingerie_single_thumb.thumb_2{
+                @media #{$large-mobile}{
+                    display: none;
+                }
+            }
+            
+        }
+    }
+    
+    
+}
